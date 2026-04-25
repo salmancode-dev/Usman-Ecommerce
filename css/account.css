@@ -1,0 +1,149 @@
+/* Account Page Styles */
+
+.account-section {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 140px;
+}
+
+.account-sidebar {
+    width: 250px;
+}
+
+.account-sidebar-block {
+    margin-bottom: 24px;
+}
+
+.account-sidebar-block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.account-sidebar-block ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.account-sidebar-block a {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.account-sidebar-block a.active, .account-sidebar-block a:hover {
+    color: var(--primary-color);
+}
+
+.account-content {
+    flex: 1;
+    background: #fff;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+    padding: 40px 80px;
+    border-radius: 4px;
+}
+
+.account-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-family: var(--font-poppins);
+}
+
+.account-form .input-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.account-form .input-field {
+    flex: 1;
+}
+
+.account-form .input-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.account-form .input-field input {
+    width: 100%;
+    background: var(--bg-light);
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.password-changes {
+    margin-top: 40px;
+}
+
+.password-changes h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.account-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cancel-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.account-breadcrumb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.welcome-text {
+    font-size: 14px;
+}
+
+.welcome-text span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .account-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .account-sidebar {
+        width: 100%;
+    }
+    .account-content {
+        padding: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .account-form .input-row {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .account-content {
+        padding: 20px;
+    }
+    .account-breadcrumb-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
